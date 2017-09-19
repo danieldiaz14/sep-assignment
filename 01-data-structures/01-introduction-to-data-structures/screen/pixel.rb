@@ -12,6 +12,23 @@ class Pixel
 
 
   def initialize(red, green, blue, x, y)
+  	@red = checkValue(red)
+  	@green = checkValue(green)
+  	@blue = checkValue(blue)
+  	@x = x
+  	@y = y
+  end
+
+  def checkValue(color)
+  	if color < 0
+  		color = 0
+  		return color
+  	end
+  	if color > 255
+  		color = 255
+  		return color
+  	end
+  	return color
   end
 
   private

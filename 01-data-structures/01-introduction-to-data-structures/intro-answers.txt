@@ -1,0 +1,69 @@
+1. A line of people at an amusement park ride.
+
+So because it is talking about a line i am thinking of an array already.
+
+* The line is composed of members, who can be represented as strings.
+
+members or strings are going to be the elements in the array or the people in the line.
+
+* When you enter the line, you are placed at the back.
+
+when you push an element to the array it will be added to the end of the array.
+
+* People may leave the line whenever they see fit and those behind them take their place.
+
+if someone leaves the line or an element is removed everything must shift down 1 element.
+
+
+
+The reason I am choosing to go with an array here is because since it is a line we can hold this information in sequential order.
+If someone leaves pop that element and shift the elements down.
+
+So we can create an array to hold people.
+
+
+var line_length = []
+
+  def add_To_Line(name)
+    line_length.push(name)
+  end
+
+
+
+
+
+
+
+
+2. Pixels on a computer screen.
+
+*a screen has a width and a height
+  a multi-dimensional array would work for this or a matrix.
+  the width will be how long the arrays are.
+  the height would be which row in the array. example
+  [
+  [0,1,2,3,4],
+  [0,1,2,3,4],
+  [0,1,2,3,4],
+  [0,1,2,3,4],
+  [0,1,2,3,4],
+  ]
+
+  array = {}
+  array.width = 5
+  array.height = 5
+  array.x = 3
+  array.y = 0
+
+  Value returned would be 3
+* screen is composed of Pixels
+
+fill the arrays with ints. the ints represent Pixels
+
+
+* a pixel requires three color values, red, green, blue.
+give each array a color based on these values
+
+*if less than 0 then its 0, greater than 255 then its 255.
+
+simple if else check.
