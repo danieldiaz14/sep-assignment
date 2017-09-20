@@ -1,0 +1,13 @@
+the implementation of this was quite simple.
+
+
+I created a global variable that is the index of the array or in this case the object.
+
+As I add things into the array the global variable increases in length incrementing the index of the array.
+
+To remove items following LIFO I subtract - 1 from the global variable since it was incremented for the next push.
+And delete the value there. 
+
+
+
+To check of the array is empty i just have to check if the size of the array is less than or equal to 0.
