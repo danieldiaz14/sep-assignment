@@ -1,0 +1,40 @@
+This one was really confusing at first.
+
+
+I may still not have a full understanding of it.
+
+But from what i understand the way linked lists are structured are pretty interesting.
+
+First you have to create an object, in this case Node.
+
+And give it two attributes or properties, in this case head and or tail(structured mine a little weird)
+
+
+so we're going to have something like this (head, tail) // This isn't the actual syntax
+
+So we're going to have the head equal a value, this value can be any data type; int, float, char, string.
+
+value isn't really important, what is important is the tail.
+
+because the tail is going to reference the next node or in other words link to it.
+
+so it will be something like this.
+
+Node 1 = ('Daniel', Node 2)
+
+Node 2 = ('Dylan', null)
+
+
+Notice the null in there? The null means that it is the last node because it doesn't link to anything.
+
+if we were to created a third node it would look like this.
+
+
+Node 1 = ('Daniel', Node 2)
+
+Node 2 = ('Dylan', Node 3)
+
+Node 3 = ('Bloc', null)
+
+
+Hope this explains it.
