@@ -1,0 +1,10 @@
+This was an interesting one.
+
+
+So we are creating an object called a hash in this class.
+
+the core of this data structure is going to be an array.
+
+where the indices will be determined by a hashing function.
+
+the hashing function in this case will take the value and create a code based on the sum of ACSII of the string.
