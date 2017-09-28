@@ -16,7 +16,6 @@ class SeparateChaining
   			@items[index(key,value)] = value
   			@keys[index(key,value)] = key
   		else
-        new_node = LinkedList.new()
         @items[index(key,value)] = LinkedList.new(value)
         return @items
   		end
