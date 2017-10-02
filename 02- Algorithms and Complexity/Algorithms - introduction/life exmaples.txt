@@ -1,0 +1,42 @@
+1.
+def sandwich(how many)
+  get all ingredients.
+  open ingredients.
+  take out bread
+  put bread on table
+  put meat on top of bread
+  put cheese on top of meat
+  put mayo and mustard
+  put another piece of bread on top
+  return sandwich
+end
+
+
+2.
+def Video games(which game)
+  power on console.
+  grab game case
+  take disc out of game case
+  insert disc into console
+  launch game from console menu
+
+  return enjoy game
+end
+
+
+
+3.
+def make cup noodles
+  take cup noodles out of box
+  prepare hot water
+  take lid of cup noddles
+  wait x amount of time for water to be hot
+  pour hot water into cup noodles
+  wait y amount of time
+  grab a bowl
+  put bowl on table
+  grab cup noodles
+  pour noodles into bowl.
+
+  return enjoy.
+end
