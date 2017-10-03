@@ -1,0 +1,44 @@
+Given the alphabetically sorted collection in this checkpoint,
+how many iterations would it take to find the value G using linear search?
+[A,B,C,D,E,F,G]
+[0,1,2,3,4,5,6]
+It would take up to 6 iterations.
+or to find any letter it would be "n" times.
+
+Given the alphabetically sorted collection in this checkpoint,
+how many iterations would it take to find the value G using binary search?
+[A,B,C,D,E,F,G]
+Midpoint = D
+D < G
+[E, F, G]
+Midpoint = F
+f < G
+[G]
+
+It would take at least 3
+
+Calculate fib(10), fib(11), fib(12) by hand.
+
+
+fib(10) = 89
+fib(11) = 144
+fib(12) = 233
+
+
+
+Given an unsorted collection of a million items,
+which algorithm would you choose between linear search and binary search?
+Would you use an iterative or recursive solution? Explain your reasoning.
+
+I would use linear search because binary search will not work in an unsorted collection of data.
+I would use iterative because iterative runs O(n) while recursion is 0(n^2)
+
+Given a sorted collection of a million items,
+which algorithm would you choose between linear search and binary search?
+Would you use an iterative or recursive solution? Explain your reasoning.
+
+
+I would definitely pick binary search if the collection is sorted.
+Not only because it works but because of its divide and conquer nature it would be really efficient.
+Because of the divide and conquer nature it will run less times and therefore recursion wouldn't
+cause any significant slow, so i'd use that.
