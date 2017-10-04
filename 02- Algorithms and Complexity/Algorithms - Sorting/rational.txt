@@ -1,0 +1,7 @@
+some sorting algorithms are faster than others based on the method of computation
+
+in general the size of the data or input will affect how long the computation takes.
+
+but other factors are number of nested loops or methods called in recursion.
+
+these take longer because more information is being computed for each iteration.

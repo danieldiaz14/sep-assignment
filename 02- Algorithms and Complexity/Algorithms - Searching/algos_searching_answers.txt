@@ -31,7 +31,7 @@ which algorithm would you choose between linear search and binary search?
 Would you use an iterative or recursive solution? Explain your reasoning.
 
 I would use linear search because binary search will not work in an unsorted collection of data.
-I would use iterative because iterative runs O(n) while recursion is 0(n^2)
+I would use iterative because iterative runs O(n) while recursion is 0(2^n)
 
 Given a sorted collection of a million items,
 which algorithm would you choose between linear search and binary search?
