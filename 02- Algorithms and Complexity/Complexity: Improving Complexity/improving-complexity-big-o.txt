@@ -1,0 +1,12 @@
+version 1. This would be O(n^2) because there is a nested for loops which indicates that we are looping
+ through the set of data twice.
+
+
+version 2.
+
+I used merge sort to sort and combine the data so the run time is O(nlogn)
+
+version 3.
+
+I believe the run time for the first time processing it would be O(nlogn)
+however afterwards it would be constant because the sorted array is stored.
