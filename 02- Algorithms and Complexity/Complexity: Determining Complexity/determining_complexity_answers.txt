@@ -1,0 +1,27 @@
+1. The Big-O of this algorithm is O(1) or constant time.
+    My reasoning behind this is that there are constant variables,
+    there are no iterations on any data. You simply return what the
+    input is, therefore whatever the input is will be constant.
+
+2 The Big-0 of this algorithm is O(n) or linear time.
+  My reasoning behind this is that if the largest item in the collection is last
+  then it will need to iterate n times before it finds the largest value.
+  Therefore the size of input or n is the run time.
+
+3. The Big-0 of this algorithm is O(n^2) or N-squared.
+   The indicator for this is that we are looping twice for each iteration of n.
+   So the runtime is N^2.
+
+4. The Big-0 of this algorithm is O(2^n).
+  The indicator for this is that we are recursively calling the function 2 times,
+  while we iterate through the size of the data.
+
+
+5. The Big-0 of this algorithm is O(logn).
+  I don't have a good reason why it just looks like O(logn).
+  
+
+6. The Big-0 of this algorithm in the absolute worst case that is unlikely is O(n^2).
+   However the most common  is Big-O(nlogn).
+
+   The indicator is that for n we are traversing logn times.
