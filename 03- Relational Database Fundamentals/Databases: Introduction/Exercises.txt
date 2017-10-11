@@ -1,0 +1,61 @@
+1.
+A Clockwork Orange - string
+42                 - integer
+09/02/1945         - string
+98.7               - float
+15.99              - float
+
+2.
+A database might be used when you are creating a platform where data needs to be managed,
+in a particular way. Reasons for this may vary but an example could be that you are playing a
+game online and the state of the game needs to be processed for multiple people. The server can
+manipulate the database and create a live world that the changes reflect onto everyone's client.
+
+A text file would be used when it a single user or a platform that is offline or in other words
+changes don't need to be reflected onto multiple areas. What comes to mind is when you're playing
+a game like Skyrim, since the game is offline and it only keeps track of what you're doing, you
+could have a text file that saves the state of the game. Missions you have completed, loot you
+are carrying, your level, etc.
+
+3. SQL is a declarative language where as other languages are Procedural.
+
+Declarative meaning you describe a result and that is received.
+Where as procedural you need to describe an algorithm or process steps at various degrees.
+
+4.
+A database allows data to be stored and be used even after a program has terminated.
+
+An example would be taking a picture and it is saved onto your phone.
+
+
+
+5.
+A database will consist of a table name. example - Movie theater
+
+This table name will store the rows and columns of that table.
+
+The columns will describe attributes of that table. examples - showtime, movie title, 3d or not.
+
+The rows will answer the attributes of provide data/ values. examples - 3:00pm, traveling salesman, false.
+
+6. Integers, floats, strings.
+
+7. What is the date and amount for payments.
+
+   What is the amount for payments less than 500.
+
+   What are all the payments where payee is Mega Foods.
+
+8.
+
+SELECT userid, signup
+FROM users
+WHERE name = DeAndre Data
+
+SELECT userid
+FROM users
+WHERE email = aleesia.algorithm@uw.edu
+
+SELECT *
+FROM users
+WHERE userid = 4
