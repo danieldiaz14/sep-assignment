@@ -1,0 +1,81 @@
+1. SELECT <column>
+FROM <table>
+WHERE <condition>
+
+SELECT food
+FROM movie theater
+WHERE price < 3;
+
+2. SCFTWC
+Select, column, from, table, where , condition.
+
+
+3.
+CREATE TABLE dogs (
+    id integer,
+    name varchar(25),
+    gender char(1),
+    age integer,
+    weight integer,
+    breed text,
+    intake_date date,
+    in_foster date
+);
+
+INSERT INTO dogs
+    VALUES
+    (10001, 'Boujee', 'F', 3, 36, 'labrador poodle', '2017-06-22', null),
+    (10002, 'Munchkin', 'F', 0, 8, 'dachsund chihuahua', '2017-01-13', '2017-01-31'),
+    (10004, 'Marley', 'M', 0, 10, 'labrador', '2017-05-04', '2016-06-20'),
+    (10003, 'Lassie', 'F', 7, 17, 'collie shepherd', '2016-07-05', '2017-07-22'),
+    (10006, 'Marmaduke', 'M', 7, 150, 'great dane', '2016-03-22', '2016-05-15'),
+    (10007, 'Rosco', 'M', 5, 180, 'rottweiler', '2017-04-01', null);
+
+SELECT breed
+FROM dogs
+WHERE breed LIKE '&labrador&';
+
+SELECT id
+FROM dogs
+WHERE age < 1;
+
+SELECT name, age
+FROM dogs
+WHERE gender=F AND weight > 35;
+
+SELECT *
+FROM dogs
+WHERE breed NOT LIKE '&Shepard&'
+
+SELECT id, age, weight, breed
+FROM dogs
+WHERE weight > 60 OR breed = 'great dane'
+
+
+4. Both would return name from cat.
+
+5.
+SELECT *
+FROM cats
+WHERE adoption_date = null;
+
+SELECT name
+FROM cats
+WHERE id=00001 OR id=00002 OR id=00003;
+
+SELECT name
+FROM cats.
+
+
+6.
+< - less than. You find someone shorter than you. so you search in a database for everyone's heights that are shorter than yours.
+> - greater than. You want to find something that has a better review than the place you previous went. You check all the places who have a higher review.
+<= - less than or equal to. Lets say you have a budget and don't know what to eat. you check all results that are less than or equal to your budget so you have choices to eat.
+>= - greater than or equal to. You want to look for a place that was just as good or better than the place you went to before. You search for a place greater than or equal to.
+!= - not equal to. You are okay with eating anything but are allergic to peanuts, so you search for everything that doesn't contain peanuts.
+= - equal to. You are a vegan and want to eat something that is exactly vegan. this would help. (sorry vegans.)
+
+
+7. 1. Seashell, Nala
+   2. Mushi, Seashell, Victoire, Nala.
+   3. Azul and Victoire.
