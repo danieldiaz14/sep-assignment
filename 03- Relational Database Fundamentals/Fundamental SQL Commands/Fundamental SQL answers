@@ -1,0 +1,113 @@
+1. INSERT INTO  - Adding
+   UPDATE - update
+   DELETE FROM - delete
+2.
+INSERT into table VALUES (column, column2, column3)
+table will be the name of the table from the database
+
+UPDATE table name SET column WHERE condition
+So the table name will be the name of the table.
+the column will be the name of the column
+the condition will be the condition for the changes to occur
+
+DELETE from table name where condition
+Same structure as above but it will remove based on condition.
+
+3.
+We can use ints, text/strings, floats, booleans.
+Real world examples.
+
+ints => age 21
+text => Person's name Daniel
+float => Blood Alcohol level 0.0
+drunk => false
+
+4.CREATE Table Wedding_List(
+first name text,
+last name text,
+RSVP boolean,
+number of guests int,
+number of meals numeric,
+);
+
+ALTER TABLE Wedding_List ADD COLUMN thank_you boolean;
+
+ALTER TABLE Wedding_List DROP COLUMN number of meals;
+
+ALTER TABLE Wedding_List ADD COLUMN table number int;
+
+DROP TABLE Wedding_List;
+
+
+5.
+
+CREATE TABLE Library(
+ISBN text,
+title text,
+author text,
+genre text,
+publishing date date,
+number of copies int,
+available copies int
+);
+
+INSERT INTO Library(ISBN, title, author, genre, publishing date, number of copies, available copies )
+VALUES
+(undefined, book1, author1, drama, 2010, 6, 2 ),
+(undefined, book2, author2, comedy, 1990, 6, 1 ),
+(undefined, book3, author3, sci-fi, 2017, 6, 6 );
+
+UPDATE Library SET available copies = 1
+WHERE title=book3;
+
+DELETE FROM Library
+WHERE title=book3;
+
+6.
+
+CREATE TABLE SpaceCrafts(
+ID int,
+name text,
+year int,
+country text,
+description text,
+orbiting body text,
+operating boolean,
+distance from earth numeric
+);
+
+INSERT INTO SpaceCrafts(ID, name, year, country, description, orbiting body, operating, distance)
+VALUES
+(1, name1, 2015, Japan, description 1, orbiting text, false , 0 miles)
+(2, name2, 2016, China, description 2, orbiting text2, true, 25,000 miles)
+(3, name3, 2017, USA, Best Satellite, orbiting text3, true , 30,000 miles)
+
+DELETE FROM SpaceCrafts
+WHERE id=2;
+
+UPDATE SpaceCrafts Set operating = false
+WHERE id=3
+
+7.
+
+CREATE TABLE Email(
+id int,
+subject text,
+sender text,
+recipients text,
+body text,
+timestamp time,
+read boolean,
+idchain int
+)
+
+INSERT INTO Email(ID, subject, sender, recipients, body, timestamp, read, idchain)
+VALUES
+(1, subject1, Daniel, Dylan, description 1, 4:00pm, false , 0 )
+(2, subject2, Dylan, Daniel, description 2, 5:00pm, true, 5)
+(3, subject3, BlocStudent3, Daniel, description 3, 6:00pm, true , 3)
+
+DELETE * FROM Email
+Where id=3
+UPDATE Email set recipient=Dan
+where id=3;
