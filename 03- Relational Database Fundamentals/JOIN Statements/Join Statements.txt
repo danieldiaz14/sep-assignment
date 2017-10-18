@@ -1,0 +1,47 @@
+1. You can use the JOIN method.
+   You search for data that is both and select the results from there.
+
+2.
+CROSS JOIN: Combine two entire tables. Table of music, table of artists. Combine to display a table that contains both.
+
+INNER JOIN: Combine two tables into one row based on common rows. Two different schools combine all students into a table called gifted where you use inner join to find their GPA.
+
+LEFT OUTER JOIN: Results will contain everything from the left but only contain matching right table. Table 1 peoples names and characteristics. Table 2 people who swam under 22 seconds.
+
+RIGHT OUTER JOIN: Results will contain everything from the right but only contain matching left table. Table 1 Soldiers alive. Table 2 all soldier before deployment.
+
+FULL OUTER JOIN: First follows inner join then any row that doesn't satisfy conditions is filled with null values from columns in table 2.
+
+3.
+Primary Key: A unique key used in tables to differentiate rows. example: you have table of students. There are two students named Daniel Diaz. how do you tell them apart? You look at their primary keys which will be different.
+
+Foreign Key: A foreign key is a key used to link two tables together. You have two tables of transactions. one is food. one is recreational. You check the foreign key of the customers to see how much they have spent since they'll have matching keys.
+
+4. Aliasing: The technique used to shorten table names.
+Example : table name - Supercalifragilisticexpialidocious
+S.name = ....
+
+5. SELECT professor.name, compensation.salary, compensation.vacation_days
+FROM professor AS p
+JOIN compensation AS c
+ON p.id = c.professor_id;
+
+6. When you want to join tables only when they have the same columns.
+
+   When organizing a tournament for fighting games.
+   perhaps a participant has signed up for multiple games.
+   you check which games the participant has signed up for.
+
+7. CREATE TABLE Employees(
+id int
+)
+  CREATE TABLE Shifts(
+  shift time
+  )
+
+  SELECT Employees.id, Shifts.shift
+  FROM Employees
+  JOIN Shifts
+  ON Employees.shift_id = Shifts.shift;
+
+8.
