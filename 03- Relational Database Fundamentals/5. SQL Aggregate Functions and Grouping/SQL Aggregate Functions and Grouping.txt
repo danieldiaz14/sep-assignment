@@ -1,0 +1,98 @@
+1.
+Min: to find the minimum in a column. Could be used to find who was injured the least amount of times at work.
+Max: to find the maximum in a column. Could be used to find who spent the most in a given year.
+Sum: to find the sum of a column. Could be used to find profits for a year by finding sum of all transactions for that year.
+AVG: to find the average of a column. Could be used to find the average time it takes to run a mile for someone in a marathon.
+Count: to find how entries in a column. Could be used to find how many students are enrolled at bloc.
+
+2.
+donor,amount,date
+Daenerys,102,3/22/2017
+Missandei,25,3/23/2017
+Missandei,30,3/24/2017
+Daenerys,71,3/25/2017
+Tyrion,60,3/26/2017
+Sansa,33,3/27/2017
+Jon,25,3/28/2017
+Missandei,10,3/29/2017
+Arya,15,3/30/2017
+Tormund,50,3/31/2017
+Bran,25,4/1/2017
+Arya,30,4/2/2017
+Brienne,75,4/3/2017
+Margaery,120,4/4/2017
+Samwell,20,4/5/2017
+Melisandre,45,4/6/2017
+Petyr,70,4/7/2017
+Theon,5,4/8/2017
+Bronn,20,4/9/2017
+Daario,10,4/10/2017
+Gilly,7,4/11/2017
+Ygritte,30,4/12/2017
+Tyrion,50,4/13/2017
+Arya,15,4/14/2017
+Tyrion,10,4/15/2017
+Missandei,25,4/16/2017
+Theon,15,4/17/2017
+
+SELECT SUM(amount)
+FROM iron-bank-foundation;
+
+SELECT COUNT(donor), SUM(amount)
+FROM iron-bank-foundation;
+
+SELECT DISTINCT(donor), AVG(amount)
+FROM iron-bank-foundation;
+
+SELECT COUNT(amount)
+FROM iron-bank-foundation
+WHERE amount > 100;
+
+SELECT DISTINCT(donor), MAX(amount)
+FROM iron-bank-foundation;
+
+SELECT MIN(amount)
+FROM iron-bank-foundation;
+
+3. You can use ORDER BY to manipulate display order.
+
+4. OFFSET would be used when you need to skip over some data.
+   Lets say you previously used limit to limit which people would get a raise. But the budget dramatically increased and now you can give everyone a raise.
+   You don't want to give a raise to someone you already gave a raise to. So you skip or offset the people who already got a raise.
+
+5. It is important to use order by to show priority when display data.
+
+6. WHERE filters rows before aggregation and HAVING filters groups after aggregations.
+
+7. SELECT AVG(salary) as average_salary, vacation_days
+  FROM compensation
+  GROUP BY vacation_days
+  HAVING average_salary < 50000
+  ORDER BY vacation_days DESC
+
+
+  SELECT id , SUM (amount) as total
+  FROM payment
+  HAVING total > 200
+
+8. SELECT *
+   FROM cats
+   ORDER BY intake_date ASC;
+
+   SELECT cat
+   FROM adoptions
+   ORDER BY date DESC
+   LIMIT 5;
+
+   Not possible given that we don't know the age of the cats.
+
+
+   SELECT donor, SUM(amount) as total
+   FROM iron-bank-foundation
+   ORDER BY total DESC
+   LIMIT 5;
+
+   SELECT donor, SUM(amount) as total
+   FROM iron-bank-foundation
+   ORDER BY TOTAL DESC
+   OFFSET 6;
