@@ -1,0 +1,19 @@
+1. The nesting of a query within a query.
+   You can create these nesting in the where, from or select clause
+
+2. You do this when you want to retrieve a calculation
+  example.
+
+  SELECT data, data.calculation
+  soidfjgosijdf
+  sfidgjsoidfjgos;
+
+3. Best times to use a subquery is when you want to solve
+   Retrieve data from a table based off another table.
+
+4. it builds a single row using values you provide.
+   It will then solve the left side and compare it to each row
+
+5. it will return false
+
+6. EXISTS, NOT EXISTS, IN, NOT IN, ANY & SOME, ALL
