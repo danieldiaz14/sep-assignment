@@ -1,0 +1,35 @@
+1. The benefits of normalization is the write speed of the data. It allows you to organize it so you reduce data duplication and redundant data.
+   A real world example if having a database for products. Maybe you have several that are shampoos but they have other qualities of it.
+   normalization will help make each one distinctly different.
+
+2. 1N: first N is that no column can contain multiple values.
+       an example would be if a brand had multiple types of shampoos.
+       you would have to list them as different shampoos now.
+
+   2N: Second N is that firstly it must be in 1n.
+       Then no column in the table should be Dependent on the primary key.
+       So now you would split the table.
+       one containing the name of the product and brand
+       second containing the name of the product and type
+
+   3N: Third N is that firstly it must be in 2N.
+       The transitive property on columns doesn't transfer to primary key.
+       This would involve splitting the tables up even more to ensure the columns are not dependent on the primary key.
+
+   4: BCNF is that firstly i must be in 3NF
+      All columns must be a super key of the table.
+      So it would mean that each column is virtually independent of one another.
+
+3.
+student_id, student_name, student_email table1.
+entry_id, grade, subject table2.
+professor_id, professor_name table3
+
+4. I believe it makes it less readable in my opinion.
+   It also makes it more difficult to sort or aggregate the data.
+
+5. a potential strategy would be to make the table from 3N to 1N.
+   I believe having no duplicates would be sufficient in this case because in a school database a lot of values will be dependent on each other.
+
+6. The trades off would be the writing would only be in 1N so it wouldn't be writing in the best way possible and the data integrity will be affected.
+   The bright side would be that the read speed would be greatly enhanced and aggregate functions would be a lot better.
